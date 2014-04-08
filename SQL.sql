@@ -1,3 +1,9 @@
+# UPDATE + LEFT JOIN
+UPDATE table t1
+LEFT JOIN t2 ON t2.id=t1.join_id
+SET t1.key=t2.key
+
+
 # DOUBLONS
 SELECT *, COUNT(*) AS count  
 FROM table
