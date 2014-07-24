@@ -19,6 +19,13 @@ SELECT d.*, COUNT(*) FROM tablename d
 WHERE d.id NOT IN (SELECT join_column FROM join_table) 
 GROUP BY d.id
 
+# RECORD WITHOUT JOIN
+SELECT *
+FROM  commande C 
+       LEFT OUTER JOIN transaction T
+            ON C.id = T.commande_id
+WHERE T.id IS NULL
+
 
 # COUNT RECORD WITHOUT JOIN + GROUP BY
 SELECT t.nom, COUNT(*) FROM diplomes d 
