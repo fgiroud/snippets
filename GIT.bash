@@ -7,5 +7,5 @@ git reset HEAD^
 
 
 
-#purge sal dump from particular table inserts
+#purge sql dump from particular table inserts
 sed '/INSERT INTO `TABLE_TO_SKIP`/d' DBdump.sql > reduced.sql
