@@ -9,3 +9,6 @@ git reset HEAD^
 
 #purge sql dump from particular table inserts
 sed '/INSERT INTO `TABLE_TO_SKIP`/d' DBdump.sql > reduced.sql
+
+# list conflicts
+git ls-files -u  | cut -f 2 | sort -u
