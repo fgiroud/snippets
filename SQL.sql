@@ -1,3 +1,7 @@
+# FOREIGN KEYS CONSTRAINTS CHECK
+SET foreign_key_checks = 0;
+SET foreign_key_checks = 1;
+
 # UPDATE + LEFT JOIN
 UPDATE table t1
 LEFT JOIN t2 ON t2.id=t1.join_id
@@ -39,9 +43,7 @@ GROUP BY type_diplome_id
 GROUP_CONCAT( f1, f2 SEPARATOR "---" ) AS f;
 
 
-# FOREIGN KEYS CONSTRAINTS CHECK
-SET foreign_key_checks = 0;
-SET foreign_key_checks = 1;
+
 
 
 
