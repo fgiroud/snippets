@@ -1,4 +1,4 @@
 snippets
 ========
 
-usefull web development snippets (pieces of code)
+My personal snippets
