@@ -1,3 +1,6 @@
+# LOAD CSV
+mysql -uroot -proot --local-infile nsv11 -e "LOAD DATA LOCAL INFILE 'file.csv'  INTO TABLE tmpcls  FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'"
+
 # FOREIGN KEYS CONSTRAINTS CHECK
 SET foreign_key_checks = 0;
 SET foreign_key_checks = 1;
